@@ -402,7 +402,16 @@ public class WxMpXmlMessage implements Serializable {
     return fromXml(plainText);
   }
 
-  public static WxMpXmlMessage fromEncryptedXml(
+    public static synchronized WxMpXmlMessage fromEncryptedXml(
+            String encryptedXml,
+            com.daniel.weixin.mp.api.WxMpConfigStorage wxMpConfigStorage,
+            String timestamp, String nonce, String msgSignature,String mpTag) {
+        com.daniel.weixin.mp.util.crypto.WxMpCryptUtil cryptUtil = new com.daniel.weixin.mp.util.crypto.WxMpCryptUtil(wxMpConfigStorage,mpTag);
+        String plainText = cryptUtil.decrypt(msgSignature, timestamp, nonce, encryptedXml);
+        return fromXml(plainText);
+    }
+
+  public static synchronized WxMpXmlMessage fromEncryptedXml(
       InputStream is,
       com.daniel.weixin.mp.api.WxMpConfigStorage wxMpConfigStorage,
       String timestamp, String nonce, String msgSignature) {
@@ -412,6 +421,17 @@ public class WxMpXmlMessage implements Serializable {
       throw new RuntimeException(e);
     }
   }
+
+    public static WxMpXmlMessage fromEncryptedXml(
+            InputStream is,
+            com.daniel.weixin.mp.api.WxMpConfigStorage wxMpConfigStorage,
+            String timestamp, String nonce, String msgSignature,String mpTag) {
+        try {
+            return fromEncryptedXml(IOUtils.toString(is, "UTF-8"), wxMpConfigStorage, timestamp, nonce, msgSignature,mpTag);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
   public String getStatus() {
     return status;

@@ -82,6 +82,15 @@ public class WxMpServiceImpl implements com.daniel.weixin.mp.api.WxMpService {
         }
     }
 
+    @Override
+    public boolean checkSignature(String timestamp, String nonce, String signature, String mpTag) {
+        try {
+            return SHA1.gen(wxMpConfigStorage.getToken(mpTag), timestamp, nonce).equals(signature);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     public String getAccessToken() throws WxErrorException {
         return getAccessToken(false);
     }

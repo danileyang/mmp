@@ -3,13 +3,13 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
     xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>me.chanjar</groupId>
+  <groupId>com.daniel</groupId>
   <artifactId>weixin-java-parent</artifactId>
   <version>1.1.2</version>
   <packaging>pom</packaging>
   <name>WeiXin Java Tools - Parent</name>
   <description>微信公众号、企业号上级POM</description>
-  <url>https://github.com/chanjarster/danielyang/weixin-java-tools</url>
+  <url>https://github.com/danielyang/weixin-java-tools</url>
 
   <licenses>
     <license>
@@ -20,15 +20,15 @@
 
   <developers>
     <developer>
-      <name>Daniel Qian</name>
-      <email>chanjarster/danielyang@gmail.com</email>
+      <name>Daniel Yang</name>
+      <email>daniel.yonder@gmail.com</email>
     </developer>
   </developers>
 
   <scm>
-    <connection>scm:git:https://github.com/chanjarster/danielyang/weixin-java-tools.git</connection>
-    <developerConnection>scm:git:git@github.com:chanjarster/danielyang/weixin-java-tools.git</developerConnection>
-    <url>https://github.com/chanjarster/danielyang/weixin-java-tools</url>
+    <connection>scm:git@github.com:danileyang/mmp.git</connection>
+    <developerConnection>scm:git:git@github.com:danileyang/mmp.git</developerConnection>
+    <url>https://github.com/danileyang/mmp</url>
   </scm>
 
   <modules>

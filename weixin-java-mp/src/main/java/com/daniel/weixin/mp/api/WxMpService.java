@@ -34,6 +34,20 @@ public interface WxMpService {
     public boolean checkSignature(String timestamp, String nonce, String signature);
 
     /**
+     * <pre>
+     * 验证推送过来的消息的正确性
+     * 详情请见: http://mp.weixin.qq.com/wiki/index.php?title=验证消息真实性
+     * </pre>
+     *
+     * @param timestamp
+     * @param nonce
+     * @param signature
+     * @param mpTag
+     * @return
+     */
+    public boolean checkSignature(String timestamp, String nonce, String signature,String mpTag);
+
+    /**
      * 获取access_token, 不强制刷新access_token
      *
      * @return

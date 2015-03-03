@@ -37,4 +37,20 @@ public class WxMpCryptUtil extends com.daniel.weixin.common.util.crypto.WxCryptU
     this.aesKey = Base64.decodeBase64(encodingAesKey + "=");
   }
 
+    public WxMpCryptUtil(com.daniel.weixin.mp.api.WxMpConfigStorage wxMpConfigStorage,String mpTag) {
+    /*
+     * @param token          公众平台上，开发者设置的token
+     * @param encodingAesKey 公众平台上，开发者设置的EncodingAESKey
+     * @param appId          公众平台appid
+     */
+        String encodingAesKey = wxMpConfigStorage.getAesKey(mpTag);
+        String token = wxMpConfigStorage.getToken(mpTag);
+        String appId = wxMpConfigStorage.getAppId(mpTag);
+
+        this.token = token;
+        this.appidOrCorpid = appId;
+        this.aesKey = Base64.decodeBase64(encodingAesKey + "=");
+
+    }
+
 }
