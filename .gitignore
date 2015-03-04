@@ -2,7 +2,6 @@
 .settings
 .project
 .classpath
-target/
 .svn/
 *.iml
 .idea/

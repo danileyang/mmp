@@ -87,20 +87,30 @@ public interface WxMpConfigStorage {
 
     public String getAppId(String mpTag);
 
+    public void setAppId(String mpTag,boolean multi);
+
     public String getSecret();
+
+    public void setSecret(String mpTag,boolean multi);
 
     public String getSecret(String mpTag);
 
     public String getToken();
 
+    public void setToken(String mpTag,boolean multi);
+
     public String getToken(String mpTag);
 
     public String getAesKey();
+
+    public void setAesKey(String mpTag,boolean multi);
 
     public String getAesKey(String mpTag);
 
 
     public long getExpiresTime();
+
+    public void setExpiresTime(String mpTag,boolean multi);
 
     public long getExpiresTime(String mpTag);
 
