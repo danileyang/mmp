@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.daniel</groupId>
-  <artifactId>weixin-java-parent</artifactId>
+  <artifactId>weixin-java-mp</artifactId>
   <versioning>
     <release>1.1.2</release>
     <versions>
       <version>1.1.2</version>
     </versions>
-    <lastUpdated>20150304043128</lastUpdated>
+    <lastUpdated>20150304043149</lastUpdated>
   </versioning>
 </metadata>
