@@ -1,1 +1,0 @@
-this sdk is for users who want use multiply weixin mp accounts .
