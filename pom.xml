@@ -31,8 +31,6 @@
   </scm>
 
   <modules>
-    <module>weixin-java-common</module>
-    <module>weixin-java-cp</module>
     <module>weixin-java-mp</module>
   </modules>
 
