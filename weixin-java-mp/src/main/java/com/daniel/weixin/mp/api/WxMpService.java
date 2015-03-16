@@ -1,9 +1,9 @@
 package com.daniel.weixin.mp.api;
 
-import com.daniel.weixin.common.bean.WxMenu;
-import com.daniel.weixin.common.bean.WxJsapiSignature;
-import com.daniel.weixin.common.bean.result.WxMediaUploadResult;
 import com.daniel.weixin.common.exception.WxErrorException;
+import com.daniel.weixin.common.model.response.WxJsapiSignature;
+import com.daniel.weixin.common.model.response.WxMediaUploadResult;
+import com.daniel.weixin.common.model.response.WxMenu;
 import com.daniel.weixin.common.util.http.RequestExecutor;
 
 import java.io.File;
@@ -156,8 +156,8 @@ public interface WxMpService {
      * 详情请见: http://mp.weixin.qq.com/wiki/index.php?title=上传下载多媒体文件
      * </pre>
      *
-     * @param mediaType   媒体类型, 请看{@link com.daniel.weixin.common.api.WxConsts}
-     * @param fileType    文件类型，请看{@link com.daniel.weixin.common.api.WxConsts}
+     * @param mediaType   媒体类型, 请看{@link com.daniel.weixin.common.util.WxConsts}
+     * @param fileType    文件类型，请看{@link com.daniel.weixin.common.util.WxConsts}
      * @param inputStream 输入流
      * @throws com.daniel.weixin.common.exception.WxErrorException
      */

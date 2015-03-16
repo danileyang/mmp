@@ -1,6 +1,6 @@
 package com.daniel.weixin.mp.api;
 
-import com.daniel.weixin.common.bean.WxAccessToken;
+import com.daniel.weixin.common.model.response.WxAccessToken;
 
 /**
  * 微信客户端配置存储

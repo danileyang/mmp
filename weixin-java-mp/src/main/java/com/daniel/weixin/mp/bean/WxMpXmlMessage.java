@@ -175,13 +175,13 @@ public class WxMpXmlMessage implements Serializable {
   /**
    * <pre>
    * 当接受用户消息时，可能会获得以下值：
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_TEXT}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_IMAGE}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_VOICE}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_VIDEO}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_LOCATION}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_LINK}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_EVENT}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_TEXT}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_IMAGE}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_VOICE}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_VIDEO}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_LOCATION}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_LINK}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_EVENT}
    * </pre>
    *
    * @return
@@ -193,12 +193,12 @@ public class WxMpXmlMessage implements Serializable {
   /**
    * <pre>
    * 当发送消息的时候使用：
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_TEXT}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_IMAGE}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_VOICE}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_VIDEO}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_NEWS}
-   * {@link com.daniel.weixin.common.api.WxConsts#XML_MSG_MUSIC}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_TEXT}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_IMAGE}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_VOICE}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_VIDEO}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_NEWS}
+   * {@link com.daniel.weixin.common.util.WxConsts#XML_MSG_MUSIC}
    * </pre>
    *
    * @param msgType

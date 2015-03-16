@@ -1,6 +1,6 @@
 package com.daniel.weixin.mp.bean;
 
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 import com.daniel.weixin.mp.bean.WxMpCustomMessage.WxArticle;
 import org.testng.Assert;
 import org.testng.annotations.Test;

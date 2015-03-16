@@ -2,7 +2,7 @@ package com.daniel.weixin.mp.api;
 
 import com.daniel.weixin.common.exception.WxErrorException;
 import com.daniel.weixin.common.session.WxSessionManager;
-import com.daniel.weixin.common.api.WxErrorExceptionHandler;
+import com.daniel.weixin.common.service.WxErrorExceptionHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;

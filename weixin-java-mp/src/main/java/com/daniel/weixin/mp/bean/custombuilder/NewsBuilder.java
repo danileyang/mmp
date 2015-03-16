@@ -1,6 +1,6 @@
 package com.daniel.weixin.mp.bean.custombuilder;
 
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 
 import java.util.ArrayList;
 import java.util.List;

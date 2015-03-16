@@ -38,12 +38,12 @@ public class WxMpCustomMessage implements Serializable {
   /**
    * <pre>
    * 请使用
-   * {@link com.daniel.weixin.common.api.WxConsts#CUSTOM_MSG_TEXT}
-   * {@link com.daniel.weixin.common.api.WxConsts#CUSTOM_MSG_IMAGE}
-   * {@link com.daniel.weixin.common.api.WxConsts#CUSTOM_MSG_VOICE}
-   * {@link com.daniel.weixin.common.api.WxConsts#CUSTOM_MSG_MUSIC}
-   * {@link com.daniel.weixin.common.api.WxConsts#CUSTOM_MSG_VIDEO}
-   * {@link com.daniel.weixin.common.api.WxConsts#CUSTOM_MSG_NEWS}
+   * {@link com.daniel.weixin.common.util.WxConsts#CUSTOM_MSG_TEXT}
+   * {@link com.daniel.weixin.common.util.WxConsts#CUSTOM_MSG_IMAGE}
+   * {@link com.daniel.weixin.common.util.WxConsts#CUSTOM_MSG_VOICE}
+   * {@link com.daniel.weixin.common.util.WxConsts#CUSTOM_MSG_MUSIC}
+   * {@link com.daniel.weixin.common.util.WxConsts#CUSTOM_MSG_VIDEO}
+   * {@link com.daniel.weixin.common.util.WxConsts#CUSTOM_MSG_NEWS}
    * </pre>
    * @param msgType
    */

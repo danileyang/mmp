@@ -1,6 +1,6 @@
 package com.daniel.weixin.mp.api;
 
-import com.daniel.weixin.common.bean.WxAccessToken;
+import com.daniel.weixin.common.model.response.WxAccessToken;
 
 /**
  * 基于内存的微信配置provider，在实际生产环境中应该将这些配置持久化

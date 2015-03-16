@@ -1,9 +1,9 @@
 package com.daniel.weixin.mp.api;
 
 import com.google.inject.Inject;
-import com.daniel.weixin.common.api.WxConsts;
-import com.daniel.weixin.common.bean.WxMenu;
-import com.daniel.weixin.common.bean.WxMenu.WxMenuButton;
+import com.daniel.weixin.common.util.WxConsts;
+import com.daniel.weixin.common.model.response.WxMenu;
+import com.daniel.weixin.common.model.response.WxMenu.WxMenuButton;
 import com.daniel.weixin.common.exception.WxErrorException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

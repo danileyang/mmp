@@ -1,7 +1,7 @@
 package com.daniel.weixin.mp.api;
 
 import com.google.inject.Inject;
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 import com.daniel.weixin.common.bean.result.WxMediaUploadResult;
 import com.daniel.weixin.common.exception.WxErrorException;
 import com.daniel.weixin.mp.bean.WxMpMassGroupMessage;

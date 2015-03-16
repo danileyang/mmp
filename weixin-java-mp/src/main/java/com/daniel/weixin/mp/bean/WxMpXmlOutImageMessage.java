@@ -2,7 +2,7 @@ package com.daniel.weixin.mp.bean;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 import com.daniel.weixin.common.util.xml.XStreamMediaIdConverter;
 
 @XStreamAlias("xml")

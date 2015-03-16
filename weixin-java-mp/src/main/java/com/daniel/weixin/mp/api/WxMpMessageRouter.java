@@ -5,9 +5,9 @@ import com.daniel.weixin.common.session.InternalSessionManager;
 import com.daniel.weixin.common.session.StandardSessionManager;
 import com.daniel.weixin.common.session.WxSessionManager;
 import com.daniel.weixin.common.util.LogExceptionHandler;
-import com.daniel.weixin.common.api.WxErrorExceptionHandler;
-import com.daniel.weixin.common.api.WxMessageDuplicateChecker;
-import com.daniel.weixin.common.api.WxMessageInMemoryDuplicateChecker;
+import com.daniel.weixin.common.service.WxErrorExceptionHandler;
+import com.daniel.weixin.common.service.WxMessageDuplicateChecker;
+import com.daniel.weixin.common.service.WxMessageInMemoryDuplicateChecker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -85,8 +85,8 @@ public class WxMpMessageRouter {
 
   /**
    * <pre>
-   * 设置自定义的 {@link com.daniel.weixin.common.api.WxMessageDuplicateChecker}
-   * 如果不调用该方法，默认使用 {@link com.daniel.weixin.common.api.WxMessageInMemoryDuplicateChecker}
+   * 设置自定义的 {@link com.daniel.weixin.common.service.WxMessageDuplicateChecker}
+   * 如果不调用该方法，默认使用 {@link com.daniel.weixin.common.service.WxMessageInMemoryDuplicateChecker}
    * </pre>
    * @param messageDuplicateChecker
    */
@@ -107,7 +107,7 @@ public class WxMpMessageRouter {
 
   /**
    * <pre>
-   * 设置自定义的{@link com.daniel.weixin.common.api.WxErrorExceptionHandler}
+   * 设置自定义的{@link com.daniel.weixin.common.service.WxErrorExceptionHandler}
    * 如果不调用该方法，默认使用 {@link com.daniel.weixin.common.util.LogExceptionHandler}
    * </pre>
    * @param exceptionHandler

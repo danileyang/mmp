@@ -9,7 +9,7 @@
 package com.daniel.weixin.mp.util.json;
 
 import com.google.gson.*;
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 
 import java.lang.reflect.Type;
 

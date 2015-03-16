@@ -1,7 +1,7 @@
 package com.daniel.weixin.mp.api;
 
 import com.google.inject.Inject;
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 import com.daniel.weixin.common.exception.WxErrorException;
 import com.daniel.weixin.mp.bean.WxMpCustomMessage;
 import org.testng.annotations.Guice;

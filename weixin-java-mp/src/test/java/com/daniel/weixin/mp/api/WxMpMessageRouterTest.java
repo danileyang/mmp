@@ -1,6 +1,6 @@
 package com.daniel.weixin.mp.api;
 
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 import com.daniel.weixin.common.session.StandardSessionManager;
 import com.daniel.weixin.common.session.WxSessionManager;
 import com.daniel.weixin.mp.bean.WxMpXmlMessage;

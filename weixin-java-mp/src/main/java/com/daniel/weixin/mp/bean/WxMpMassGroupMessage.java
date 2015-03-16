@@ -25,11 +25,11 @@ public class WxMpMassGroupMessage implements Serializable {
   /**
    * <pre>
    * 请使用
-   * {@link com.daniel.weixin.common.api.WxConsts#MASS_MSG_IMAGE}
-   * {@link com.daniel.weixin.common.api.WxConsts#MASS_MSG_NEWS}
-   * {@link com.daniel.weixin.common.api.WxConsts#MASS_MSG_TEXT}
-   * {@link com.daniel.weixin.common.api.WxConsts#MASS_MSG_VIDEO}
-   * {@link com.daniel.weixin.common.api.WxConsts#MASS_MSG_VOICE}
+   * {@link com.daniel.weixin.common.util.WxConsts#MASS_MSG_IMAGE}
+   * {@link com.daniel.weixin.common.util.WxConsts#MASS_MSG_NEWS}
+   * {@link com.daniel.weixin.common.util.WxConsts#MASS_MSG_TEXT}
+   * {@link com.daniel.weixin.common.util.WxConsts#MASS_MSG_VIDEO}
+   * {@link com.daniel.weixin.common.util.WxConsts#MASS_MSG_VOICE}
    * 如果msgtype和media_id不匹配的话，会返回系统繁忙的错误
    * </pre>
    * @param msgtype

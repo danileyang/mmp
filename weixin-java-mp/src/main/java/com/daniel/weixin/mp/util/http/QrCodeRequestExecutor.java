@@ -1,8 +1,8 @@
 package com.daniel.weixin.mp.util.http;
 
-import com.daniel.weixin.common.bean.result.WxError;
 import com.daniel.weixin.common.exception.WxErrorException;
-import com.daniel.weixin.common.util.fs.FileUtils;
+import com.daniel.weixin.common.model.response.error.WxError;
+import com.daniel.weixin.common.util.fileUtil.FileUtils;
 import com.daniel.weixin.common.util.http.InputStreamResponseHandler;
 import com.daniel.weixin.common.util.http.RequestExecutor;
 import com.daniel.weixin.common.util.http.Utf8ResponseHandler;

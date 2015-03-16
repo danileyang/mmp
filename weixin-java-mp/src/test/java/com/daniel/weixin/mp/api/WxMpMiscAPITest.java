@@ -1,25 +1,14 @@
 package com.daniel.weixin.mp.api;
 
 import com.google.inject.Inject;
-import com.daniel.weixin.common.api.WxConsts;
 import com.daniel.weixin.common.bean.result.WxMediaUploadResult;
 import com.daniel.weixin.common.exception.WxErrorException;
-import com.daniel.weixin.common.session.WxSession;
-import com.daniel.weixin.mp.bean.WxMpMassGroupMessage;
-import com.daniel.weixin.mp.bean.WxMpMassNews;
-import com.daniel.weixin.mp.bean.WxMpMassOpenIdsMessage;
-import com.daniel.weixin.mp.bean.WxMpMassVideo;
-import com.daniel.weixin.mp.bean.result.WxMpMassSendResult;
-import com.daniel.weixin.mp.bean.result.WxMpMassUploadResult;
 import com.daniel.weixin.mp.bean.result.WxMpUserCumulate;
 import com.daniel.weixin.mp.bean.result.WxMpUserSummary;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Guice;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;

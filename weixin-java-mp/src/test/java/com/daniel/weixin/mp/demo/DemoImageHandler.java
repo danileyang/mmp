@@ -1,6 +1,6 @@
 package com.daniel.weixin.mp.demo;
 
-import com.daniel.weixin.common.api.WxConsts;
+import com.daniel.weixin.common.util.WxConsts;
 import com.daniel.weixin.common.bean.result.WxMediaUploadResult;
 import com.daniel.weixin.common.exception.WxErrorException;
 import com.daniel.weixin.common.session.WxSessionManager;
