@@ -30,7 +30,7 @@ public class WxMessageInMemoryDuplicateChecker implements WxMessageDuplicateChec
   /**
    * 后台清理线程是否已经开启
    */
-  private final AtomicBoolean backgroundProcessStarted = new AtomicBoolean(false);
+  private static  AtomicBoolean backgroundProcessStarted = new AtomicBoolean(false);
 
   /**
    * WxMsgIdInMemoryDuplicateChecker构造函数
