@@ -55,29 +55,31 @@ public class WxMessageInMemoryDuplicateChecker implements WxMessageDuplicateChec
   }
 
   protected void checkBackgroundProcessStarted() {
-    if (backgroundProcessStarted.getAndSet(true)) {
+    if (backgroundProcessStarted.get()) {
       return;
-    }
-    Thread t = new Thread(new Runnable() {
-      @Override
-      public void run() {
-        try {
-          while (true) {
-            Thread.sleep(clearPeriod);
-            Long now = System.currentTimeMillis();
-            for (Map.Entry<String, Long> entry : msgId2Timestamp.entrySet()) {
-              if (now - entry.getValue() > timeToLive) {
-                msgId2Timestamp.entrySet().remove(entry);
-              }
+    }else{
+        backgroundProcessStarted.set(true);
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    while (true) {
+                        Thread.sleep(clearPeriod);
+                        Long now = System.currentTimeMillis();
+                        for (Map.Entry<String, Long> entry : msgId2Timestamp.entrySet()) {
+                            if (now - entry.getValue() > timeToLive) {
+                                msgId2Timestamp.entrySet().remove(entry);
+                            }
+                        }
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-          }
-        } catch (InterruptedException e) {
-          e.printStackTrace();
-        }
-      }
-    });
-    t.setDaemon(true);
-    t.start();
+        });
+        t.setDaemon(true);
+        t.start();
+    }
   }
 
   @Override
